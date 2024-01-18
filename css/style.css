@@ -178,7 +178,7 @@ header .navbar .nav-link {
 }
 
 header .navbar .nav-link.active {
-  color: #bc5148 !important;
+  color: white !important;
 }
 
 header .navbar .dropdown-menu {
@@ -205,12 +205,12 @@ header .navbar .dropdown-menu:before {
 }
 
 header .navbar .dropdown-menu .dropdown-item:hover {
-  background: #bc5148;
+  background: #67c18c;
   color: #fff;
 }
 
 header .navbar .dropdown-menu .dropdown-item.active {
-  background: #bc5148;
+  background: #67c18c;
   color: #fff;
 }
 
