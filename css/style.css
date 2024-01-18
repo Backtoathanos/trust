@@ -8,9 +8,9 @@ body {
 }
 
 a {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   text-decoration: none;
 }
 
@@ -18,7 +18,10 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h5 {
+h1,
+h2,
+h3,
+h5 {
   color: #000;
 }
 
@@ -26,13 +29,17 @@ h1, h2, h3, h5 {
   font-family: "Sacramento", cursive;
 }
 
-.btn, .form-control {
+.btn,
+.form-control {
   outline: none;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
-.btn:focus, .btn:active, .form-control:focus, .form-control:active {
+.btn:focus,
+.btn:active,
+.form-control:focus,
+.form-control:active {
   outline: none;
 }
 
@@ -56,7 +63,9 @@ textarea.form-control {
   border-width: 2px;
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
   border-color: #ca746d;
   background: #ca746d;
 }
@@ -70,7 +79,9 @@ textarea.form-control {
   color: #bc5148;
 }
 
-.btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active {
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:focus,
+.btn.btn-outline-primary:active {
   color: #fff;
 }
 
@@ -90,7 +101,7 @@ header {
 
 header .navbar-brand {
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   font-weight: 400;
 }
 
@@ -107,9 +118,9 @@ header .top-bar a {
   color: #000;
   padding: 10px;
   font-size: 13px;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   display: inline-block;
 }
 
@@ -144,14 +155,14 @@ header .top-bar .cta-btn:hover {
 header .navbar {
   padding-top: 0;
   padding-bottom: 0;
-  background: white !important;
+  background: #67c18c !important;
 }
 
 @media (max-width: 1199px) {
   header .navbar {
-    background: white !important;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    background: #67c18c !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -162,7 +173,7 @@ header .navbar .nav-link {
 
 @media (max-width: 1199px) {
   header .navbar .nav-link {
-    padding: .5rem 0rem;
+    padding: 0.5rem 0rem;
   }
 }
 
@@ -217,9 +228,9 @@ header .navbar .cta-btn a {
   padding-top: 26px !important;
   padding-bottom: 26px !important;
   line-height: 1;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 header .navbar .cta-btn a:hover {
@@ -235,7 +246,7 @@ header .navbar .cta-btn a:hover {
 
 /* Owl Carousel */
 .owl-carousel .owl-item {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .owl-carousel .owl-item.active {
@@ -257,7 +268,9 @@ header .navbar .cta-btn a:hover {
   margin-top: -10px;
 }
 
-.owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-prev:focus, .owl-carousel .owl-nav .owl-prev:active,
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-prev:focus,
+.owl-carousel .owl-nav .owl-prev:active,
 .owl-carousel .owl-nav .owl-next:hover,
 .owl-carousel .owl-nav .owl-next:focus,
 .owl-carousel .owl-nav .owl-next:active {
@@ -301,16 +314,17 @@ header .navbar .cta-btn a:hover {
 .owl-carousel.home-slider .owl-nav {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .owl-carousel.home-slider .owl-nav button {
   color: #fff;
 }
 
-.owl-carousel.home-slider:focus .owl-nav, .owl-carousel.home-slider:hover .owl-nav {
+.owl-carousel.home-slider:focus .owl-nav,
+.owl-carousel.home-slider:hover .owl-nav {
   opacity: 1;
   visibility: visible;
 }
@@ -403,9 +417,9 @@ header .navbar .cta-btn a:hover {
   border: 2px solid rgba(255, 255, 255, 0.5);
   outline: none !important;
   position: relative;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .owl-carousel.home-slider .owl-dots .owl-dot.active {
@@ -421,19 +435,24 @@ header .navbar .cta-btn a:hover {
   padding-bottom: 30px;
 }
 
-.owl-carousel.major-caousel .owl-nav .owl-prev, .owl-carousel.major-caousel .owl-nav .owl-next {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+.owl-carousel.major-caousel .owl-nav .owl-prev,
+.owl-carousel.major-caousel .owl-nav .owl-next {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   color: #495057;
 }
 
-.owl-carousel.major-caousel .owl-nav .owl-prev:hover, .owl-carousel.major-caousel .owl-nav .owl-prev:focus, .owl-carousel.major-caousel .owl-nav .owl-next:hover, .owl-carousel.major-caousel .owl-nav .owl-next:focus {
+.owl-carousel.major-caousel .owl-nav .owl-prev:hover,
+.owl-carousel.major-caousel .owl-nav .owl-prev:focus,
+.owl-carousel.major-caousel .owl-nav .owl-next:hover,
+.owl-carousel.major-caousel .owl-nav .owl-next:focus {
   color: #868e96;
   outline: none;
 }
 
-.owl-carousel.major-caousel .owl-nav .owl-prev.disabled, .owl-carousel.major-caousel .owl-nav .owl-next.disabled {
+.owl-carousel.major-caousel .owl-nav .owl-prev.disabled,
+.owl-carousel.major-caousel .owl-nav .owl-next.disabled {
   color: #dee2e6;
 }
 
@@ -507,31 +526,36 @@ header .navbar .cta-btn a:hover {
   margin-bottom: 15px;
 }
 
-.categories li, .sidelink li {
+.categories li,
+.sidelink li {
   position: relative;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px dotted #dee2e6;
 }
 
-.categories li:last-child, .sidelink li:last-child {
+.categories li:last-child,
+.sidelink li:last-child {
   margin-bottom: 0;
   border-bottom: none;
   padding-bottom: 0;
 }
 
-.categories li a, .sidelink li a {
+.categories li a,
+.sidelink li a {
   display: block;
 }
 
-.categories li a span, .sidelink li a span {
+.categories li a span,
+.sidelink li a span {
   position: absolute;
   right: 0;
   top: 0;
   color: #ccc;
 }
 
-.categories li.active a, .sidelink li.active a {
+.categories li.active a,
+.sidelink li.active a {
   color: #000;
   font-style: italic;
 }
@@ -546,9 +570,9 @@ header .navbar .cta-btn a:hover {
 
 .media-custom {
   background: #fff;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   margin-bottom: 30px;
   position: relative;
   top: 0;
@@ -561,18 +585,20 @@ header .navbar .cta-btn a:hover {
 }
 
 .media-custom img {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
-.media-custom:focus, .media-custom:hover {
+.media-custom:focus,
+.media-custom:hover {
   top: -2px;
   -webkit-box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
 }
 
-.media-custom:focus img, .media-custom:hover img {
+.media-custom:focus img,
+.media-custom:hover img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -613,9 +639,9 @@ header .navbar .cta-btn a:hover {
   -webkit-transform: translateY(-50%) rotate(-180deg);
   -ms-transform: translateY(-50%) rotate(-180deg);
   transform: translateY(-50%) rotate(-180deg);
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 #accordion .card h5 a:hover {
@@ -651,7 +677,7 @@ header .navbar .cta-btn a:hover {
 .site-footer {
   padding: 5em 0;
   background: #f2f2f2;
-  background: #bc5148;
+  background: #65c18e;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -674,7 +700,7 @@ header .navbar .cta-btn a:hover {
   font-size: 13px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   font-weight: bold;
   color: #fff;
 }
@@ -715,9 +741,9 @@ header .navbar .cta-btn a:hover {
 
 .link-thumbnail img {
   position: relative;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .link-thumbnail .date {
@@ -730,9 +756,9 @@ header .navbar .cta-btn a:hover {
 
 .link-thumbnail .icon {
   position: absolute;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   z-index: 4;
   top: 50%;
   font-size: 30px;
@@ -754,9 +780,9 @@ header .navbar .cta-btn a:hover {
   left: 0;
   color: #fff;
   font-size: 18px;
-  -webkit-transition: .5s all ease;
-  -o-transition: .5s all ease;
-  transition: .5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
   z-index: 10;
   left: 50%;
   display: block;
@@ -770,9 +796,9 @@ header .navbar .cta-btn a:hover {
   opacity: 0;
   visibility: hidden;
   z-index: 2;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   top: 0;
   left: 0;
   right: 0;
@@ -829,9 +855,9 @@ header .navbar .cta-btn a:hover {
   border-radius: 16px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  -webkit-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  -o-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
   z-index: 1000;
 }
 
@@ -851,9 +877,9 @@ header .navbar .cta-btn a:hover {
 }
 
 #loader.show {
-  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  transition: opacity .4s ease-out, visibility 0s linear 0s;
+  -webkit-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  transition: opacity 0.4s ease-out, visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
 }
