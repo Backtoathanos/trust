@@ -12,7 +12,7 @@ a {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
   text-decoration: none;
-  color: white !important;
+/*  color: white !important;*/
   font-size: 1.1rem;
 }
 
@@ -338,7 +338,7 @@ header .navbar .cta-btn a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   height: calc(100vh - 117px);
-  min-height: 700px;
+  min-height: 850px;
   position: relative;
 }
 
@@ -688,10 +688,12 @@ header .navbar .cta-btn a:hover {
 
 .site-footer p:last-child {
   margin-bottom: 0;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .site-footer a {
-  color: #ffc107;
+  color: white;
   border-bottom: 1px solid transparent;
 }
 
@@ -701,17 +703,18 @@ header .navbar .cta-btn a:hover {
 }
 
 .site-footer h3 {
-  font-size: 13px;
+  font-size: 1.2rem;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: bold;
-  color: #fff;
+  color: rgba(242, 210, 125, 1.0);
 }
 
 .site-footer .footer-link li {
   line-height: 1.5;
   margin-bottom: 15px;
+  font-size: 1.1rem;
 }
 
 .site-footer hr {
@@ -928,4 +931,17 @@ header .navbar .cta-btn a:hover {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+
+/*From here, we will write the code.*/
+/*From here, we will write the code.*/
+/*From here, we will write the code.*/
+/*From here, we will write the code.*/
+/*From here, we will write the code.*/
+/*From here, we will write the code.*/
+
+
+.fa{
+  color: white;
 }
