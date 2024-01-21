@@ -398,7 +398,7 @@ header .navbar .cta-btn a:hover {
 
 .owl-carousel.home-slider.inner-page .slider-item {
   height: calc(50vh - 117px);
-  min-height: 350px;
+  min-height: 500px;
 }
 
 .owl-carousel.home-slider.inner-page .slider-item .slider-text {
