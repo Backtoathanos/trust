@@ -945,3 +945,7 @@ header .navbar .cta-btn a:hover {
 .fa{
   color: white;
 }
+
+.img-fluid{
+  width: 1110px;
+}
