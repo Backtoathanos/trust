@@ -19,71 +19,80 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <script nonce="0e3f9638-8183-48ac-8518-94acbb14529d">
-      (function (w, d) {
-        !(function (dp, dq, dr, ds) {
-          dp[dr] = dp[dr] || {};
-          dp[dr].executed = [];
-          dp.zaraz = { deferred: [], listeners: [] };
-          dp.zaraz.q = [];
-          dp.zaraz._f = function (dt) {
-            return async function () {
-              var du = Array.prototype.slice.call(arguments);
-              dp.zaraz.q.push({ m: dt, a: du });
+    <script nonce="02c2d378-88ad-49ea-b3ea-4554b569b0dd">
+      try {
+        (function (w, d) {
+          !(function (o, p, q, r) {
+            o[q] = o[q] || {};
+            o[q].executed = [];
+            o.zaraz = { deferred: [], listeners: [] };
+            o.zaraz.q = [];
+            o.zaraz._f = function (s) {
+              return async function () {
+                var t = Array.prototype.slice.call(arguments);
+                o.zaraz.q.push({ m: s, a: t });
+              };
             };
-          };
-          for (const dv of ["track", "set", "debug"])
-            dp.zaraz[dv] = dp.zaraz._f(dv);
-          dp.zaraz.init = () => {
-            var dw = dq.getElementsByTagName(ds)[0],
-              dx = dq.createElement(ds),
-              dy = dq.getElementsByTagName("title")[0];
-            dy && (dp[dr].t = dq.getElementsByTagName("title")[0].text);
-            dp[dr].x = Math.random();
-            dp[dr].w = dp.screen.width;
-            dp[dr].h = dp.screen.height;
-            dp[dr].j = dp.innerHeight;
-            dp[dr].e = dp.innerWidth;
-            dp[dr].l = dp.location.href;
-            dp[dr].r = dq.referrer;
-            dp[dr].k = dp.screen.colorDepth;
-            dp[dr].n = dq.characterSet;
-            dp[dr].o = new Date().getTimezoneOffset();
-            if (dp.dataLayer)
-              for (const dC of Object.entries(
-                Object.entries(dataLayer).reduce(
-                  (dD, dE) => ({ ...dD[1], ...dE[1] }),
-                  {}
-                )
-              ))
-                zaraz.set(dC[0], dC[1], { scope: "page" });
-            dp[dr].q = [];
-            for (; dp.zaraz.q.length; ) {
-              const dF = dp.zaraz.q.shift();
-              dp[dr].q.push(dF);
-            }
-            dx.defer = !0;
-            for (const dG of [localStorage, sessionStorage])
-              Object.keys(dG || {})
-                .filter((dI) => dI.startsWith("_zaraz_"))
-                .forEach((dH) => {
-                  try {
-                    dp[dr]["z_" + dH.slice(7)] = JSON.parse(dG.getItem(dH));
-                  } catch {
-                    dp[dr]["z_" + dH.slice(7)] = dG.getItem(dH);
-                  }
-                });
-            dx.referrerPolicy = "origin";
-            dx.src =
-              "/cdn-cgi/zaraz/s.js?z=" +
-              btoa(encodeURIComponent(JSON.stringify(dp[dr])));
-            dw.parentNode.insertBefore(dx, dw);
-          };
-          ["complete", "interactive"].includes(dq.readyState)
-            ? zaraz.init()
-            : dp.addEventListener("DOMContentLoaded", zaraz.init);
-        })(w, d, "zarazData", "script");
-      })(window, document);
+            for (const u of ["track", "set", "debug"])
+              o.zaraz[u] = o.zaraz._f(u);
+            o.zaraz.init = () => {
+              var v = p.getElementsByTagName(r)[0],
+                w = p.createElement(r),
+                x = p.getElementsByTagName("title")[0];
+              x && (o[q].t = p.getElementsByTagName("title")[0].text);
+              o[q].x = Math.random();
+              o[q].w = o.screen.width;
+              o[q].h = o.screen.height;
+              o[q].j = o.innerHeight;
+              o[q].e = o.innerWidth;
+              o[q].l = o.location.href;
+              o[q].r = p.referrer;
+              o[q].k = o.screen.colorDepth;
+              o[q].n = p.characterSet;
+              o[q].o = new Date().getTimezoneOffset();
+              if (o.dataLayer)
+                for (const B of Object.entries(
+                  Object.entries(dataLayer).reduce(
+                    (C, D) => ({ ...C[1], ...D[1] }),
+                    {}
+                  )
+                ))
+                  zaraz.set(B[0], B[1], { scope: "page" });
+              o[q].q = [];
+              for (; o.zaraz.q.length; ) {
+                const E = o.zaraz.q.shift();
+                o[q].q.push(E);
+              }
+              w.defer = !0;
+              for (const F of [localStorage, sessionStorage])
+                Object.keys(F || {})
+                  .filter((H) => H.startsWith("_zaraz_"))
+                  .forEach((G) => {
+                    try {
+                      o[q]["z_" + G.slice(7)] = JSON.parse(F.getItem(G));
+                    } catch {
+                      o[q]["z_" + G.slice(7)] = F.getItem(G);
+                    }
+                  });
+              w.referrerPolicy = "origin";
+              w.src =
+                "/cdn-cgi/zaraz/s.js?z=" +
+                btoa(encodeURIComponent(JSON.stringify(o[q])));
+              v.parentNode.insertBefore(w, v);
+            };
+            ["complete", "interactive"].includes(p.readyState)
+              ? zaraz.init()
+              : o.addEventListener("DOMContentLoaded", zaraz.init);
+          })(w, d, "zarazData", "script");
+        })(window, document);
+      } catch (err) {
+        console.error("Failed to run Cloudflare Zaraz: ", err);
+        fetch("/cdn-cgi/zaraz/t", {
+          credentials: "include",
+          keepalive: true,
+          method: "GET",
+        });
+      }
     </script>
   </head>
   <body>
@@ -130,7 +139,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link active dropdown-toggle"
+                  class="nav-link dropdown-toggle"
                   href="about-us.html"
                   id="dropdown04"
                   data-toggle="dropdown"
@@ -140,12 +149,12 @@
                 >
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
                   <a class="dropdown-item" href="about-our-trust.html">About Our Trust</a>
-                  <a class="dropdown-item" href="vision-mission.html">Vision, Mission</a>
+                  <a class="dropdown-item" href="vision-mission.html">Vision & Mission</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link active dropdown-toggle"
                   href="services.html"
                   id="dropdown04"
                   data-toggle="dropdown"
@@ -196,13 +205,13 @@
         <div class="container">
           <div class="row slider-text align-items-center">
             <div class="col-md-7 col-sm-12 element-animate">
-              <h1>About Our Trust</h1>
+              <h1>Sponsor, Orphan, Sponsorship</h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-custom">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item"><a href="about-our-trust.html">About</a></li>
+                  <li class="breadcrumb-item"><a href="sponsor-orphan-sponsorship.html">Get Involved</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    About Our Trust
+                    Sponsor, Orphan, Sponsorship
                   </li>
                 </ol>
               </nav>
@@ -217,7 +226,7 @@
         <div class="row">
           <!-- <div class="col-md-4 order-2 sidebar">
             <div class="sidebar-box">
-              <h3>About Our Trust</h3>
+              <h3>About Us</h3>
               <ul class="list-unstyled sidelink">
                 <li class="active"><a href="#">History</a></li>
                 <li><a href="#">Leadership</a></li>
@@ -230,35 +239,43 @@
           <div class="col-md-12 order-1 main mb-5">
             <div class="row">
               <div class="col-md-12">
-                <h2>About Our Trust</h2>
-                <p>
-                  United Peace Foundation is a non-profit organisation established in 2014 and registered under Trust Act 1882 having Reg no. 6454/1048 in the year 2015 at Jamsheddpur Jharkhand. We work across India especially in rural areas to help and improve the life of destiute, orphans, widows and homeless children with a vision to spread peace & harmony and brotherhood amongst the different religions, caste and creed.
-                </p>
+                <h1>Sponsor, Orphan, Sponsorship</h1>
+                <p>Urgent appeal, 50 orphans need sponsorship now, they have been waiting desperately for your help. Act now, sponsor at least one orphan and donate just ₹2500 a month for food, education, clothes and healthcare.</p>
+                <h2>How to Donate</h2>
+                <p>Donate Generously.</p>
+                  <h4 style="color:#67c18c; font-size:25px">United Peace Foundation</h4>
+                  ICICI bank, A/C 141205000918 , IFSC code. ICIC0001412.<br>
+                  NOTE: Transaction is accepted within India only.
                 <blockquote class="blockquote">
                   <p class="mb-0 text-black">
-                    &ldquo;The best thing in life is when you love and are loved in return.&rdquo;
+                    &ldquo;You can also donate through any UPI app.&rdquo;
                   </p>
-                  <footer class="blockquote-footer">
-                    Strange <cite title="Source Title"></cite>
-                  </footer>
                 </blockquote>
                 <p class="element-animate" data-animate-effect="fadeIn">
                   <img
-                    src="img/about.jpg"
+                    src="img/upi-qr.jpg"
                     alt="Image placeholder"
-                    class="img-fluid"
+                    class=""
+                    width="250px" height="250px"
                   />
                 </p>
-                <p>
-                  Our aim is to provide the nutrition food, quality education, full healthcare and shelter to homeless orphans & badly effected children by scourge of poverty.
-                </p>
-                <!-- <p class="element-animate" data-animate-effect="fadeIn">
+                  <footer class="blockquote-footer" style="color:#67c18c; font-size:25px">
+                    <b>Important note</b> <cite title="Source Title"></cite>
+                  </footer>
+                </blockquote>
+                <ul>
+                  <li>United Peace Foundation is not registered with FCRA and we cannot accept foreign donations. We can accept the donations from Non-Residential Indians only through any bank account operational in India.</li>
+                  <li>Our account does not accept donation through NRI accounts. Donations can be accepted if the account has NRI/NRO both operation in single account.</li>
+                  <li>If you are a Non-Residential Indians and holding Indian passport and wish to donate, it is mandatory to obtain his/her passport details to ascertain that he/she is an Indian passport holder. We appreciate your support. To confirm your donation. Please write us to <b><a href="mailto:unitedpeacefoundation.in@gmail.com" class="email-to">unitedpeacefoundation.in@gmail.com</a></b></li>
+                </ul>
+                <p class="element-animate" data-animate-effect="fadeIn">
                   <img
-                    src="img/beautiful.jpg"
+                    src="img/donate.jpg"
                     alt="Image placeholder"
-                    class="img-fluid"
+                    class=""
+                    width="250px" height="250px"
                   />
-                </p> -->
+                </p>
               </div>
             </div>
           </div>
@@ -441,7 +458,7 @@
       defer
       src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
       integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-      data-cf-beacon='{"rayId":"84769b548aea9e26","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+      data-cf-beacon='{"rayId":"84787399bf3879fe","version":"2024.1.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
       crossorigin="anonymous"
     ></script>
   </body>

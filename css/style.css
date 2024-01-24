@@ -703,7 +703,7 @@ header .navbar .cta-btn a:hover {
 }
 
 .site-footer h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -714,7 +714,7 @@ header .navbar .cta-btn a:hover {
 .site-footer .footer-link li {
   line-height: 1.5;
   margin-bottom: 15px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .site-footer hr {
