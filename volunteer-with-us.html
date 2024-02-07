@@ -19,71 +19,80 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <script nonce="939da161-67c5-40a6-8dcf-bbe34d75056c">
-      (function (w, d) {
-        !(function (dp, dq, dr, ds) {
-          dp[dr] = dp[dr] || {};
-          dp[dr].executed = [];
-          dp.zaraz = { deferred: [], listeners: [] };
-          dp.zaraz.q = [];
-          dp.zaraz._f = function (dt) {
-            return async function () {
-              var du = Array.prototype.slice.call(arguments);
-              dp.zaraz.q.push({ m: dt, a: du });
+    <script nonce="02c2d378-88ad-49ea-b3ea-4554b569b0dd">
+      try {
+        (function (w, d) {
+          !(function (o, p, q, r) {
+            o[q] = o[q] || {};
+            o[q].executed = [];
+            o.zaraz = { deferred: [], listeners: [] };
+            o.zaraz.q = [];
+            o.zaraz._f = function (s) {
+              return async function () {
+                var t = Array.prototype.slice.call(arguments);
+                o.zaraz.q.push({ m: s, a: t });
+              };
             };
-          };
-          for (const dv of ["track", "set", "debug"])
-            dp.zaraz[dv] = dp.zaraz._f(dv);
-          dp.zaraz.init = () => {
-            var dw = dq.getElementsByTagName(ds)[0],
-              dx = dq.createElement(ds),
-              dy = dq.getElementsByTagName("title")[0];
-            dy && (dp[dr].t = dq.getElementsByTagName("title")[0].text);
-            dp[dr].x = Math.random();
-            dp[dr].w = dp.screen.width;
-            dp[dr].h = dp.screen.height;
-            dp[dr].j = dp.innerHeight;
-            dp[dr].e = dp.innerWidth;
-            dp[dr].l = dp.location.href;
-            dp[dr].r = dq.referrer;
-            dp[dr].k = dp.screen.colorDepth;
-            dp[dr].n = dq.characterSet;
-            dp[dr].o = new Date().getTimezoneOffset();
-            if (dp.dataLayer)
-              for (const dC of Object.entries(
-                Object.entries(dataLayer).reduce(
-                  (dD, dE) => ({ ...dD[1], ...dE[1] }),
-                  {}
-                )
-              ))
-                zaraz.set(dC[0], dC[1], { scope: "page" });
-            dp[dr].q = [];
-            for (; dp.zaraz.q.length; ) {
-              const dF = dp.zaraz.q.shift();
-              dp[dr].q.push(dF);
-            }
-            dx.defer = !0;
-            for (const dG of [localStorage, sessionStorage])
-              Object.keys(dG || {})
-                .filter((dI) => dI.startsWith("_zaraz_"))
-                .forEach((dH) => {
-                  try {
-                    dp[dr]["z_" + dH.slice(7)] = JSON.parse(dG.getItem(dH));
-                  } catch {
-                    dp[dr]["z_" + dH.slice(7)] = dG.getItem(dH);
-                  }
-                });
-            dx.referrerPolicy = "origin";
-            dx.src =
-              "/cdn-cgi/zaraz/s.js?z=" +
-              btoa(encodeURIComponent(JSON.stringify(dp[dr])));
-            dw.parentNode.insertBefore(dx, dw);
-          };
-          ["complete", "interactive"].includes(dq.readyState)
-            ? zaraz.init()
-            : dp.addEventListener("DOMContentLoaded", zaraz.init);
-        })(w, d, "zarazData", "script");
-      })(window, document);
+            for (const u of ["track", "set", "debug"])
+              o.zaraz[u] = o.zaraz._f(u);
+            o.zaraz.init = () => {
+              var v = p.getElementsByTagName(r)[0],
+                w = p.createElement(r),
+                x = p.getElementsByTagName("title")[0];
+              x && (o[q].t = p.getElementsByTagName("title")[0].text);
+              o[q].x = Math.random();
+              o[q].w = o.screen.width;
+              o[q].h = o.screen.height;
+              o[q].j = o.innerHeight;
+              o[q].e = o.innerWidth;
+              o[q].l = o.location.href;
+              o[q].r = p.referrer;
+              o[q].k = o.screen.colorDepth;
+              o[q].n = p.characterSet;
+              o[q].o = new Date().getTimezoneOffset();
+              if (o.dataLayer)
+                for (const B of Object.entries(
+                  Object.entries(dataLayer).reduce(
+                    (C, D) => ({ ...C[1], ...D[1] }),
+                    {}
+                  )
+                ))
+                  zaraz.set(B[0], B[1], { scope: "page" });
+              o[q].q = [];
+              for (; o.zaraz.q.length; ) {
+                const E = o.zaraz.q.shift();
+                o[q].q.push(E);
+              }
+              w.defer = !0;
+              for (const F of [localStorage, sessionStorage])
+                Object.keys(F || {})
+                  .filter((H) => H.startsWith("_zaraz_"))
+                  .forEach((G) => {
+                    try {
+                      o[q]["z_" + G.slice(7)] = JSON.parse(F.getItem(G));
+                    } catch {
+                      o[q]["z_" + G.slice(7)] = F.getItem(G);
+                    }
+                  });
+              w.referrerPolicy = "origin";
+              w.src =
+                "/cdn-cgi/zaraz/s.js?z=" +
+                btoa(encodeURIComponent(JSON.stringify(o[q])));
+              v.parentNode.insertBefore(w, v);
+            };
+            ["complete", "interactive"].includes(p.readyState)
+              ? zaraz.init()
+              : o.addEventListener("DOMContentLoaded", zaraz.init);
+          })(w, d, "zarazData", "script");
+        })(window, document);
+      } catch (err) {
+        console.error("Failed to run Cloudflare Zaraz: ", err);
+        fetch("/cdn-cgi/zaraz/t", {
+          credentials: "include",
+          keepalive: true,
+          method: "GET",
+        });
+      }
     </script>
   </head>
   <body>
@@ -131,7 +140,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="services.html"
+                  href="about-us.html"
                   id="dropdown04"
                   data-toggle="dropdown"
                   aria-haspopup="true"
@@ -140,12 +149,12 @@
                 >
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
                   <a class="dropdown-item" href="about-our-trust.html">About Our Trust</a>
-                  <a class="dropdown-item" href="vision-mission">Vision, Mission</a>
+                  <a class="dropdown-item" href="vision-mission.html">Vision & Mission</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link active dropdown-toggle"
                   href="services.html"
                   id="dropdown04"
                   data-toggle="dropdown"
@@ -180,7 +189,7 @@
                 <a class="nav-link" href="stories.html">Stories</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -196,12 +205,13 @@
         <div class="container">
           <div class="row slider-text align-items-center">
             <div class="col-md-7 col-sm-12 element-animate">
-              <h1>Contact</h1>
+              <h1>Volunteer With Us</h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-custom">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="volunteer-with-us.html">Get Involved</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Contact
+                    Volunteer With Us
                   </li>
                 </ol>
               </nav>
@@ -214,80 +224,54 @@
     <section class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 order-2 sidebar">
+          <!-- <div class="col-md-4 order-2 sidebar">
             <div class="sidebar-box">
-              <h3 class="mb-4">Contact Details</h3>
-              <h5 class="text-uppercase mb-3 h6 text-black">Address</h5>
-              <p class="mb-5">
-                Zakir Nagar, Mango, <br />
-                Jamshedpur, Jharkhand <br />
-                INDIA
-              </p>
-              <h5 class="text-uppercase mb-3 h6 text-black">Email Us At</h5>
-              <p class="mb-5">
-                <a
-                    href="mailto:unitedpeacefoundation.in@gmail.com" class="email-to">unitedpeacefoundation.in@gmail.com</a
-                  ></span
-                >
-              </p>
-              <h5 class="text-uppercase mb-3 h6 text-black">Call Us</h5>
-              <p>
-                Phone: +91 7463062868
-              </p>
+              <h3>About Us</h3>
+              <ul class="list-unstyled sidelink">
+                <li class="active"><a href="#">History</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
             </div>
-          </div>
-          <div class="col-md-8 order-1 main">
+          </div> -->
+          <div class="col-md-12 order-1 main mb-5">
             <div class="row">
               <div class="col-md-12">
-                <h2>Let's chat</h2>
-                <form action="#" method="post">
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="name">Name</label>
-                      <input type="text" id="name" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="phone">Phone</label>
-                      <input type="text" id="phone" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="email">Email</label>
-                      <input type="email" id="email" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="message">Write Message</label>
-                      <textarea
-                        name="message"
-                        id="message"
-                        class="form-control"
-                        cols="30"
-                        rows="8"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input
-                        type="submit"
-                        value="Send Message"
-                        class="btn btn-primary"
-                      />
-                    </div>
-                  </div>
-                </form>
+                <h1>Volunteer With Us</h1>
+                <p>Volunteering holds many benefits. It can help you to develop new skills build confidence meet new people create career opportunities and even provides you peace of mind and happiness that help to improve mental and physical fitness.</p>
+                <p>Every soul needs its dose to keep it happy and peaceful. Volunteering with us will provide you opportunity to connect with the orphans and special cause.</p>
+                <p>If you have any kind of skill talent that can help us to improve our work. Kindly forward your CV.</p>
+                  <h4 style="color:#67c18c; font-size:25px">United Peace Foundation</h4>
+                <p class="element-animate" data-animate-effect="fadeIn">
+                  <img
+                    src="img/volunteer-with-us.jpg"
+                    alt="Image placeholder"
+                    class=""
+                    width="100%" 
+                  />
+                </p>
+                  <footer class="blockquote-footer" style="color:#67c18c; font-size:25px">
+                    <b>Terms & Condition for membership</b> <cite title="Source Title"></cite>
+                  </footer>
+                </blockquote>
+                <ul>
+                  <li>No salary shall be paid to any of the members/volunteers in any way shape or form.</li>
+                  <li>United Peace Foundation is not responsible for member’s/volunteer’s personal character either good or bad.</li>
+                  <li>United Peace Foundation is not responsible for any member/volunteer if he/she violates any law of the country or found guilty in any anti-social/national activities</li>
+                  <li>United Peace Foundation is not responsible if member/volunteer gets into trouble when working with other social welfare organization or political party.</li>
+                  <li>United Peace Foundation will not provide any kind of help to member/volunteer in any social or personal problem unless it is directly related to assigned work by United Peace Foundation.</li>
+                  <li>It is not valid for a member/volunteer to assign himself/herself a designation/position in United Peace Foundation or in central office.</li>
+                  <li>Member/volunteer cannot use name/fame for his personal benefits whatsoever.</li>
+                  <li>United Peace Foundation has full authority to cancel membership at any time without prior notice and without any valid reason/cause.</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.884049903956!2d86.20118731488776!3d22.80675993008248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e30f29160b25%3A0xfac0b933ba0c80cd!2sX-way+Designs!5e0!3m2!1sen!2sin!4v1527583353529" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
     <section class="section-subscribe bg-light">
       <div class="container">
         <div class="row justify-content-center align-items-center">
@@ -463,7 +447,7 @@
       defer
       src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
       integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-      data-cf-beacon='{"rayId":"847697d5ad7f602d","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+      data-cf-beacon='{"rayId":"84787399bf3879fe","version":"2024.1.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
       crossorigin="anonymous"
     ></script>
   </body>

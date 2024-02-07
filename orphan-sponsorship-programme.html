@@ -19,80 +19,71 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <script nonce="6b8ec0b5-b005-47c2-83d5-04f3c9bd2c23">
-      try {
-        (function (w, d) {
-          !(function (o, p, q, r) {
-            o[q] = o[q] || {};
-            o[q].executed = [];
-            o.zaraz = { deferred: [], listeners: [] };
-            o.zaraz.q = [];
-            o.zaraz._f = function (s) {
-              return async function () {
-                var t = Array.prototype.slice.call(arguments);
-                o.zaraz.q.push({ m: s, a: t });
-              };
+    <script nonce="0e3f9638-8183-48ac-8518-94acbb14529d">
+      (function (w, d) {
+        !(function (dp, dq, dr, ds) {
+          dp[dr] = dp[dr] || {};
+          dp[dr].executed = [];
+          dp.zaraz = { deferred: [], listeners: [] };
+          dp.zaraz.q = [];
+          dp.zaraz._f = function (dt) {
+            return async function () {
+              var du = Array.prototype.slice.call(arguments);
+              dp.zaraz.q.push({ m: dt, a: du });
             };
-            for (const u of ["track", "set", "debug"])
-              o.zaraz[u] = o.zaraz._f(u);
-            o.zaraz.init = () => {
-              var v = p.getElementsByTagName(r)[0],
-                w = p.createElement(r),
-                x = p.getElementsByTagName("title")[0];
-              x && (o[q].t = p.getElementsByTagName("title")[0].text);
-              o[q].x = Math.random();
-              o[q].w = o.screen.width;
-              o[q].h = o.screen.height;
-              o[q].j = o.innerHeight;
-              o[q].e = o.innerWidth;
-              o[q].l = o.location.href;
-              o[q].r = p.referrer;
-              o[q].k = o.screen.colorDepth;
-              o[q].n = p.characterSet;
-              o[q].o = new Date().getTimezoneOffset();
-              if (o.dataLayer)
-                for (const B of Object.entries(
-                  Object.entries(dataLayer).reduce(
-                    (C, D) => ({ ...C[1], ...D[1] }),
-                    {}
-                  )
-                ))
-                  zaraz.set(B[0], B[1], { scope: "page" });
-              o[q].q = [];
-              for (; o.zaraz.q.length; ) {
-                const E = o.zaraz.q.shift();
-                o[q].q.push(E);
-              }
-              w.defer = !0;
-              for (const F of [localStorage, sessionStorage])
-                Object.keys(F || {})
-                  .filter((H) => H.startsWith("_zaraz_"))
-                  .forEach((G) => {
-                    try {
-                      o[q]["z_" + G.slice(7)] = JSON.parse(F.getItem(G));
-                    } catch {
-                      o[q]["z_" + G.slice(7)] = F.getItem(G);
-                    }
-                  });
-              w.referrerPolicy = "origin";
-              w.src =
-                "/cdn-cgi/zaraz/s.js?z=" +
-                btoa(encodeURIComponent(JSON.stringify(o[q])));
-              v.parentNode.insertBefore(w, v);
-            };
-            ["complete", "interactive"].includes(p.readyState)
-              ? zaraz.init()
-              : o.addEventListener("DOMContentLoaded", zaraz.init);
-          })(w, d, "zarazData", "script");
-        })(window, document);
-      } catch (err) {
-        console.error("Failed to run Cloudflare Zaraz: ", err);
-        fetch("/cdn-cgi/zaraz/t", {
-          credentials: "include",
-          keepalive: true,
-          method: "GET",
-        });
-      }
+          };
+          for (const dv of ["track", "set", "debug"])
+            dp.zaraz[dv] = dp.zaraz._f(dv);
+          dp.zaraz.init = () => {
+            var dw = dq.getElementsByTagName(ds)[0],
+              dx = dq.createElement(ds),
+              dy = dq.getElementsByTagName("title")[0];
+            dy && (dp[dr].t = dq.getElementsByTagName("title")[0].text);
+            dp[dr].x = Math.random();
+            dp[dr].w = dp.screen.width;
+            dp[dr].h = dp.screen.height;
+            dp[dr].j = dp.innerHeight;
+            dp[dr].e = dp.innerWidth;
+            dp[dr].l = dp.location.href;
+            dp[dr].r = dq.referrer;
+            dp[dr].k = dp.screen.colorDepth;
+            dp[dr].n = dq.characterSet;
+            dp[dr].o = new Date().getTimezoneOffset();
+            if (dp.dataLayer)
+              for (const dC of Object.entries(
+                Object.entries(dataLayer).reduce(
+                  (dD, dE) => ({ ...dD[1], ...dE[1] }),
+                  {}
+                )
+              ))
+                zaraz.set(dC[0], dC[1], { scope: "page" });
+            dp[dr].q = [];
+            for (; dp.zaraz.q.length; ) {
+              const dF = dp.zaraz.q.shift();
+              dp[dr].q.push(dF);
+            }
+            dx.defer = !0;
+            for (const dG of [localStorage, sessionStorage])
+              Object.keys(dG || {})
+                .filter((dI) => dI.startsWith("_zaraz_"))
+                .forEach((dH) => {
+                  try {
+                    dp[dr]["z_" + dH.slice(7)] = JSON.parse(dG.getItem(dH));
+                  } catch {
+                    dp[dr]["z_" + dH.slice(7)] = dG.getItem(dH);
+                  }
+                });
+            dx.referrerPolicy = "origin";
+            dx.src =
+              "/cdn-cgi/zaraz/s.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(dp[dr])));
+            dw.parentNode.insertBefore(dx, dw);
+          };
+          ["complete", "interactive"].includes(dq.readyState)
+            ? zaraz.init()
+            : dp.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, "zarazData", "script");
+      })(window, document);
     </script>
   </head>
   <body>
@@ -140,7 +131,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="services.html"
+                  href="about-us.html"
                   id="dropdown04"
                   data-toggle="dropdown"
                   aria-haspopup="true"
@@ -165,7 +156,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
                   <a class="dropdown-item" href="how-to-donate.html">How to Donate</a>
                   <a class="dropdown-item" href="sponsor-orphan-sponsorship.html">Sponsor, Orphan, Sponsorship</a>
-                  <a class="dropdown-item" href="#">Volunteer With Us</a>
+                  <a class="dropdown-item" href="volunteer-with-us.html">Volunteer With Us</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -179,10 +170,10 @@
                   >Programme</a
                 >
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="adoption.html">Orphan Sponsorship Programme</a>
-                  <a class="dropdown-item" href="waiting-children.html">Educational Programm</a>
-                  <a class="dropdown-item" href="adoption-how-to.html">Food Programme</a>
-                  <a class="dropdown-item" href="adoption-how-to.html">Emergency Relief Programme</a>
+                  <a class="dropdown-item" href="orphan-sponsorship-programme.html">Orphan Sponsorship Programme</a>
+                  <a class="dropdown-item" href="educational-programme.html">Educational Programm</a>
+                  <a class="dropdown-item" href="food-programme.html">Food Programme</a>
+                  <a class="dropdown-item" href="emergency-relief-programme.html">Emergency Relief Programme</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -205,13 +196,13 @@
         <div class="container">
           <div class="row slider-text align-items-center">
             <div class="col-md-7 col-sm-12 element-animate">
-              <h1>How To Adopt</h1>
+              <h1>Orphan Sponsorship Programme</h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-custom">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Adoption</a></li>
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="orphan-sponsorship-programme.html">Programme</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    How To Adopt
+                    Orphan Sponsorship Programme
                   </li>
                 </ol>
               </nav>
@@ -224,74 +215,40 @@
     <section class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 order-2 sidebar">
+          <!-- <div class="col-md-4 order-2 sidebar">
             <div class="sidebar-box">
-              <h3>Adoption</h3>
+              <h3>About Our Trust</h3>
               <ul class="list-unstyled sidelink">
-                <li><a href="#">Adoption</a></li>
-                <li><a href="#">Waiting Children</a></li>
-                <li class="active"><a href="#">How to Adopt</a></li>
+                <li class="active"><a href="#">History</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Support</a></li>
               </ul>
             </div>
-          </div>
-          <div class="col-md-8 order-1 main">
+          </div> -->
+          <div class="col-md-12 order-1 main mb-5">
             <div class="row">
               <div class="col-md-12">
-                <h2 class="mb-4 text-primary">1. Getting Started</h2>
+                <h2>Orphan Sponsorship Programme</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Magnam eaque necessitatibus autem voluptas ab iste, nulla
-                  deserunt dicta aperiam tenetur inventore in voluptates fuga,
-                  perspiciatis. Libero eveniet repellendus corrupti et impedit,
-                  at dolor accusamus numquam quae quidem nihil officiis, sunt
-                  totam, excepturi accusantium cumque ullam, id culpa inventore
-                  quos? Nam optio similique officia voluptatem sint sit, ea
-                  quisquam vero aliquam.
-                </p>
-                <blockquote class="blockquote">
-                  <p class="mb-0 text-black">
-                    &ldquo;There is only one happiness in this life, to love and
-                    be loved&rdquo;
-                  </p>
-                  <footer class="blockquote-footer">
-                    George Sand <cite title="Source Title">Source Title</cite>
-                  </footer>
-                </blockquote>
+                  Orphan sponsorship is a vital lifeline for many vulnerable young children. There are many unfortunate children who do not have loving support of a family. Children whose shelter is open sky and bed is a piece of cardboard box, living day to day with the risk of abuse and exploitation.</p>
                 <p class="element-animate" data-animate-effect="fadeIn">
                   <img
-                    src="img/big_image_1.jpg"
-                    alt="Image placeholder"
-                    class="img-fluid"
-                  />
-                </p>
-                <p class="mb-5">
-                  Molestias nesciunt sequi dignissimos, illo laboriosam
-                  deserunt. Mollitia distinctio at ipsam expedita, quo explicabo
-                  impedit optio! Et quam at impedit, fugiat. Repudiandae dolore,
-                  nemo saepe molestiae optio earum ratione a ipsum voluptatum.
-                  Nam et aperiam consequatur odit laudantium labore itaque nihil
-                  veritatis repellat distinctio officiis quod pariatur possimus
-                  facilis quia, eum, voluptas sint quasi dignissimos aliquid
-                  illum a dicta optio.
-                </p>
-                <h2 class="mb-5 text-primary">2. Envisioning Your Family</h2>
-                <p class="element-animate" data-animate-effect="fadeIn">
-                  <img
-                    src="img/work_thumb_2.jpg"
+                    src="img/osp.jpg"
                     alt="Image placeholder"
                     class="img-fluid"
                   />
                 </p>
                 <p>
-                  Molestias nesciunt sequi dignissimos, illo laboriosam
-                  deserunt. Mollitia distinctio at ipsam expedita, quo explicabo
-                  impedit optio! Et quam at impedit, fugiat. Repudiandae dolore,
-                  nemo saepe molestiae optio earum ratione a ipsum voluptatum.
-                  Nam et aperiam consequatur odit laudantium labore itaque nihil
-                  veritatis repellat distinctio officiis quod pariatur possimus
-                  facilis quia, eum, voluptas sint quasi dignissimos aliquid
-                  illum a dicta optio.
-                </p>
+                  Our Orphan sponsorship programmeme changes the life of these children in some of the most deprived communities in India. With your support we can ensure that they receive education, food, healthcare &medical support and loving care that any child needs.</p>
+                <!-- <p class="element-animate" data-animate-effect="fadeIn">
+                  <img
+                    src="img/beautiful.jpg"
+                    alt="Image placeholder"
+                    class="img-fluid"
+                  />
+                </p> -->
               </div>
             </div>
           </div>
@@ -473,7 +430,7 @@
       defer
       src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
       integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-      data-cf-beacon='{"rayId":"8476c03b0c20862d","version":"2024.1.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+      data-cf-beacon='{"rayId":"84769b548aea9e26","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
       crossorigin="anonymous"
     ></script>
   </body>
