@@ -949,3 +949,12 @@ header .navbar .cta-btn a:hover {
 .img-fluid{
   width: 1110px;
 }
+
+.img-fluiding{
+  width: 900px
+}
+
+.fluiding{
+  text-align: center;
+  background-color: #67c18c;
+}
